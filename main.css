@@ -41,7 +41,6 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  z-index: 0;
 }
 
 .--linkHover {
@@ -194,7 +193,6 @@ a {
   border-radius: 2em;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
   width: 100%;
-  z-index: 0;
 }
 
 @media screen and (min-width: 830px) {
@@ -263,6 +261,12 @@ a {
   color: #fff;
   padding: 1em 1.5em;
   border-radius: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.workCard--fix {
+  z-index: 0;
 }
 
 .workCard__cta:hover {
@@ -322,7 +326,6 @@ a {
   border-radius: 2em;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.103);
   position: relative;
-  z-index: 0;
 }
 
 @media screen and (min-width: 830px) {
@@ -371,7 +374,6 @@ a {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  z-index: 0;
 }
 
 @media screen and (min-width: 830px) {
@@ -431,6 +433,7 @@ a {
   height: fit-content;
   display: flex;
   flex-direction: column;
+  z-index: 0;
 }
 
 .mobileNav__logo {
@@ -450,7 +453,6 @@ a {
   margin: 0 auto;
   height: fit-content;
   background: #fff;
-  z-index: 200;
   padding: 1.5em 1.5em;
   display: flex;
   justify-content: space-between;
@@ -460,7 +462,6 @@ a {
 .mobileNav__hamburger {
   cursor: pointer;
   height: fit-content;
-  z-index: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -512,13 +513,12 @@ a {
   display: flex;
   height: 100vh;
   background: rgba(51, 51, 51, 0.9);
-  z-index: 0;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0 1.5em 0 1.5em;
   opacity: 0;
-  transition: opacity 280ms;
+  transition: opacity 280ms, height 150ms;
 }
 
 .mobileNav__link {
@@ -534,6 +534,10 @@ a {
   transform: scale(0.9) translateY(6%);
   transition: transform 120ms 55ms ease, opacity 140ms 0ms;
 }
+
+/* .mobileNavLinkContainer--active {
+  height: 100vh;
+} */
 
 .mobileNav__link:last-child {
   transition: transform 120ms ease, opacity 120ms 0ms;
