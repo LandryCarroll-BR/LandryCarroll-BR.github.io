@@ -41,7 +41,7 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  z-index: 20;
+  z-index: 0;
 }
 
 .--linkHover {
@@ -357,6 +357,7 @@ a {
 
 .featuredCard__cta {
   font-size: 2rem;
+  font-weight: 300;
   text-align: center !important;
 }
 
@@ -384,6 +385,7 @@ a {
 
 .footer__link {
   font-size: 1.7rem;
+  font-weight: 300;
   margin-bottom: 1em;
   width: fit-content;
   overflow: hidden;
@@ -458,7 +460,7 @@ a {
 .mobileNav__hamburger {
   cursor: pointer;
   height: fit-content;
-  z-index: 500;
+  z-index: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -507,22 +509,16 @@ a {
 }
 
 .mobileNavLinkContainer {
-  display: none;
+  display: flex;
   height: 100vh;
   background: rgba(51, 51, 51, 0.9);
-  z-index: 180;
+  z-index: 0;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0 1.5em 0 1.5em;
   opacity: 0;
   transition: opacity 280ms;
-}
-
-@media screen and (min-width: 830px) {
-  .mobileNav {
-    display: flex;
-  }
 }
 
 .mobileNav__link {
@@ -550,5 +546,4 @@ a {
 
 .mobileNavLinkContainer--active .mobileNav__link {
   transform: translateY(0);
-  transform: scale(1);
 }
