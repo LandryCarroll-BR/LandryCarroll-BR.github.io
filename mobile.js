@@ -12,4 +12,5 @@ link.addEventListener("click", () => {
 
 container.addEventListener("click", () => {
   container.classList.remove("mobileNavLinkContainer--active");
+  hamburger.classList.remove("opened");
 });

@@ -1,0 +1,122 @@
+.csBanner {
+  background-image: url(./images/header@2x.webp);
+  height: fit-content;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  padding: 20em 0 4em 0;
+  position: relative;
+  z-index: 0;
+  margin-top: -4em;
+}
+
+@media screen and (min-width: 830px) {
+  .csBanner {
+    padding: 20em 0;
+  }
+}
+
+.csBanner::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(25, 25, 25);
+  background: linear-gradient(
+    360deg,
+    rgba(25, 25, 25, 1) 0%,
+    rgba(51, 51, 51, 0.86) 50%,
+    rgba(51, 51, 51, 0) 100%
+  );
+  z-index: -1;
+}
+
+@media screen and (min-width: 830px) {
+  .csBanner::before {
+    background: rgb(25, 25, 25);
+    background: linear-gradient(
+      -90deg,
+      rgba(25, 25, 25, 1) 0%,
+      rgba(51, 51, 51, 0.86) 50%,
+      rgba(51, 51, 51, 0) 100%
+    );
+  }
+}
+
+.csBanner__container {
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 830px) {
+  .csBanner__container {
+    max-width: 948px;
+  }
+}
+
+.csBanner__title,
+.csBanner__description {
+  color: #fff;
+  text-align: left;
+  z-index: 10;
+}
+
+@media screen and (min-width: 830px) {
+  .csBanner__title,
+  .csBanner__description {
+    text-align: right;
+  }
+}
+
+.csBanner__title {
+  font-size: 3.7rem;
+  margin-bottom: 0.5em;
+}
+
+.csBanner__description {
+  font-size: 1.8rem;
+}
+
+.problem,
+.solution__container,
+.future {
+  max-width: 948px;
+  margin: 0 auto;
+  padding: 5em 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.problem > img {
+  margin: 0 auto;
+}
+
+.solution {
+  background: #eee;
+}
+
+main img {
+  max-width: 100%;
+  border-radius: 0.2em;
+}
+
+main h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5em;
+}
+
+main p,
+main figcaption {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 0 auto 6em auto;
+}
+
+main figcaption {
+  text-align: center;
+  max-width: 80ch;
+}

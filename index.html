@@ -11,8 +11,8 @@
     broaden their opportunity for growth.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
   
@@ -28,10 +28,10 @@
   </nav>
 
   <div class="hero">
-    <img src="./images/landry.jpg" width="200" height="200" alt="photo of Landry Carroll" class="hero__img">
+    <img src="./images/landry.webp" width="200" height="200" alt="photo of Landry Carroll" class="hero__img">
     
     <div class="hero__right">
-      <h1 class="hero__title">Hi, I'm Landry 👋</h1>
+      <h1 class="hero__title">Hi, I'm Landry</h1>
       <p class="hero__description">I’m a Baton Rouge, LA based designer and
         front-end developer with two years of experience crafting websites,
         digital tools, and graphics that help businesses and non-profits
@@ -49,11 +49,11 @@
         <h2 class="workCard__title">Creating Digital Signage From the Ground Up</h2>
         <p class="workCard__description">How to develop quick solutions that can adapt
           over time.</p>
-        <a href="#" class="workCard__cta">View Case Study</a>
+        <a href="./caseStudy1.html" class="workCard__cta">View Case Study</a>
       </div>
     </div>
 
-    <div class="workCard">
+    <!-- <div class="workCard">
       <div class="workCard__img"></div>
       <div class="workCard__info">
         <span class="workCard__tagline">Logo Design / Branding</span>
@@ -62,7 +62,7 @@
           marketing stage.</p>
         <a href="#" class="workCard__cta">View Case Study</a>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <section class="featured">
@@ -117,15 +117,17 @@
         <h2>Landry Carroll</h2>
         <p>Designer / Front-end Developer</p>
       </a>
-      <svg id="hamburger" class="mobileNav__hamburger" xmlns="http://www.w3.org/2000/svg" width="36.896" height="24.5"
-        viewBox="0 0 36.896 24.5">
-        <path id="Path_11" data-name="Path 11" d="M1194,2940.012h32.4" transform="translate(-1191.75 -2937.762)" fill="none"
-          stroke="#333" stroke-linecap="round" stroke-width="4.5" />
-        <path id="Path_12" data-name="Path 12" d="M1194,2940.012h32.4" transform="translate(-1191.75 -2927.762)" fill="none"
-          stroke="#333" stroke-linecap="round" stroke-width="4.5" />
-        <path id="Path_13" data-name="Path 13" d="M1194,2940.012h32.4" transform="translate(-1191.75 -2917.762)" fill="none"
-          stroke="#333" stroke-linecap="round" stroke-width="4.5" />
-      </svg>
+      <button id="hamburger" class="mobileNav__hamburger"
+        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        aria-label="Main Menu">
+        <svg width="40" height="40" viewBox="0 0 100 100">
+          <path class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
     </div>
 </nav>
 

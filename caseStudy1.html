@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>South Walker Information Screens</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Local religious organization is seeking to
+   redesign and restructure their information screens that are displayed throughout
+   their building.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./caseStudy1.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="/" class="nav__logo">
+        <h2>Landry Carroll</h2>
+        <p>Designer / Front-end Developer</p>
+      </a>
+
+      <a class="nav__link --linkHover" href="#work">Work</a>
+      <a class="nav__link --linkHover" target="_blank" href="mailto:hello@landrycarroll.com">hello@landrycarroll.com</a>
+    </nav>
+  </header>
+
+  <section class="csBanner">
+    <div class="csBanner__container">
+      <h1 class="csBanner__title">Creating Digital Signage <br> From the Ground Up</h1>
+      <p class="csBanner__description">How to develop quick solutions that can <br>
+        adapt over time.</p>
+    </div>
+  </section>
+
+  <main class="csMain">
+    <div class="problem">
+      <h2>Overview</h1>
+      <p>A Local religious organization is seeking to redesign and restructure their
+        information screens that are displayed
+        throughout their building.</p>
+      
+      <h2>Problem</h2>
+      <p>Since the client was using the same CMS that manages their website to update their
+        information screens, they couldn’t
+        make real-time updates. This meant that screens had to be refreshed in order to
+        display the latest content. <br> <br>
+      
+        An image slider was used to display content. This required a designer to create a
+        separate image for every new
+        announcement or piece of content that needed to be added. Although this is not
+        difficult to achieve, they did not have
+        the proper staff to create and maintain the images needed to meet the demand of
+        incoming updates.</p>
+      
+      <img src="./images/old.webp" alt="old version of information screens">
+      <figcaption>A screenshot image of what their
+        old screens looked like.</figcaption>
+      
+      <h2>Desired Outcome</h2>
+      <p>The client wanted a way for someone to quickly and easily update the content
+        on their information screens without needing any design skills or knowledge.
+        They also needed an update to their system as quickly as possible, as they
+        had a large upcoming event, and wanted to have the new
+        system ready for then</p>
+    </div>
+    
+    <div class="solution">
+      <div class="solution__container">
+        <h2>Solution</h2>
+        <p>Based on my experience with using React.js for developing web-apps, and Google
+          Firebase’s Firestore for making real-time updates, I thought that implementing
+          these features would make a great solution for a quick expedition of the final
+          product.</p>
+
+        <img src="./images/new1@2x.webp" alt="new version of information screens">
+        <figcaption>Instead of needing images for every announcement, the final product uses
+          a coded slider. This allows for easy updates and consistent design.</figcaption>
+
+        <img src="./images/new2@2x.webp" alt="home dashboard">
+        <figcaption>Because of the time restraints on the project the initial user interface
+          is simple and straightforward. The home page displays the current active
+          announcements. The user can add new announcements and delete old announcements
+          here.</figcaption>
+        
+        <img src="./images/new3@2x.webp" alt="annoucement editor screen">
+        <figcaption>The user simply inputs a title and a subtitle for the announcement, and
+          searches pexels.com for the appropriate background image URL.</figcaption>
+      </div>
+    </div>
+
+    <div class="future">
+      <h2>Future Development</h2>
+      <p>The client is open to working together again on this project in the future, in
+        order to add more features and quality-of-life improvements. These possibilities
+        include using the Pexels API for finding images within the application and edit
+        feature.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="footer__link --linkHover" target="_blank" href="mailto:hello@landrycarroll.com"
+      class="footer__link --linkHover">hello@landrycarroll.com</a>
+    <span class="footer__copyright">©2021 Landry Carroll</span>
+    <div class="footer__navRight">
+      <a href="#" class="footer__link --linkHover">GitHub</a>
+      <a href="#" class="footer__link --linkHover">Dribbble</a>
+    </div>
+  </footer>
+
+  <nav class="mobileNav">
+    <div id="container" class="mobileNavLinkContainer">
+      <a id="link" class="mobileNav__link" href="#work">Work</a>
+      <a class="mobileNav__link" target="_blank" href="mailto:hello@landrycarroll.com">hello@landrycarroll.com</a>
+    </div>
+
+    <div id="" class="mobileNavMenuContainer">
+      <a href="/" class="mobileNav__logo">
+        <h2>Landry Carroll</h2>
+        <p>Designer / Front-end Developer</p>
+      </a>
+      <button id="hamburger" class="mobileNav__hamburger"
+        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        aria-label="Main Menu">
+        <svg width="40" height="40" viewBox="0 0 100 100">
+          <path class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <script src="./mobile.js"></script>
+</body>
+
+</html>
