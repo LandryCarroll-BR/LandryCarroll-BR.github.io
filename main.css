@@ -507,7 +507,7 @@ a {
 }
 
 .mobileNavLinkContainer {
-  display: flex;
+  display: none;
   height: 100vh;
   background: rgba(51, 51, 51, 0.9);
   z-index: 180;
@@ -517,6 +517,12 @@ a {
   padding: 0 1.5em 0 1.5em;
   opacity: 0;
   transition: opacity 280ms;
+}
+
+@media screen and (min-width: 830px) {
+  .mobileNav {
+    display: flex;
+  }
 }
 
 .mobileNav__link {
