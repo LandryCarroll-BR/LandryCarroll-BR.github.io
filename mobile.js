@@ -10,9 +10,11 @@ hamburger.addEventListener("click", () => {
 
 link.addEventListener("click", () => {
   container.classList.remove("mobileNavLinkContainer--active");
+  cta.classList.remove("workCard--fix");
 });
 
 container.addEventListener("click", () => {
   container.classList.remove("mobileNavLinkContainer--active");
   hamburger.classList.remove("opened");
+  cta.classList.remove("workCard--fix");
 });
