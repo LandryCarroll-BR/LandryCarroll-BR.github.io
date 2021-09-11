@@ -433,7 +433,6 @@ a {
   height: fit-content;
   display: flex;
   flex-direction: column;
-  z-index: 0;
 }
 
 .mobileNav__logo {
@@ -452,11 +451,7 @@ a {
   width: 100vw;
   margin: 0 auto;
   height: fit-content;
-  background: #fff;
-  padding: 1.5em 1.5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 4em 1.5em;
 }
 
 .mobileNav__hamburger {
@@ -550,4 +545,19 @@ a {
 
 .mobileNavLinkContainer--active .mobileNav__link {
   transform: translateY(0);
+}
+
+.mobileNavMenuContainer2 {
+  width: 100vw;
+  margin: 0 auto;
+  height: fit-content;
+  background: #fff;
+  padding: 2em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
 }
