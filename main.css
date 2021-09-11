@@ -450,7 +450,6 @@ a {
 .mobileNavMenuContainer {
   width: 100vw;
   margin: 0 auto;
-  height: fit-content;
   padding: 3.5em 1.5em;
 }
 
