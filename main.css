@@ -550,9 +550,8 @@ a {
 .mobileNavMenuContainer2 {
   width: 100vw;
   margin: 0 auto;
-  height: fit-content;
   background: #fff;
-  padding: 0 1.5em;
+  padding: 1.5em 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
